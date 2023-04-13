@@ -12,6 +12,6 @@ def solution(x_success: int,
     conv_y = y_success/y_cnt
     p = (x_success + y_success) / (x_cnt + y_cnt)
     z = (conv_x - conv_y) / math.sqrt(p*(1-p)*(1/x_cnt + 1/y_cnt))
-    critical_value = norm.ppf(0.015)  
+    critical_value = norm.ppf(0.03)  
 
 return abs(z) > critical_value
